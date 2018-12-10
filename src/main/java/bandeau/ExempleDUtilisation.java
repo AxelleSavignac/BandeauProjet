@@ -9,7 +9,7 @@ public class ExempleDUtilisation {
     public static void main(String[] args) {
 	    new ExempleDUtilisation().exemple();
     }
-    
+    // Ceci est le premier exemple implementé pour illustrer l'effet animation
     public void exemple() {
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
