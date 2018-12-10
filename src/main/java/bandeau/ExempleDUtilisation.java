@@ -7,7 +7,7 @@ public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
     
     public static void main(String[] args) {
-	    new ExempleDUtilisation().exemple();
+	    new Zoom().ZoomAnimation();
     }
     // Ceci est le premier exemple implementé pour illustrer l'effet animation
     public void exemple() {
