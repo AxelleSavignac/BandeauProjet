@@ -7,9 +7,12 @@ public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
     
     public static void main(String[] args) {
-	    new ExempleDUtilisation().exemple();
+	    /*Scénario sc = new Scénario();
+            Effet zoom = new Zoom();
+            sc.AjouterEffet(zoom.ZoomAnimation());
+            sc.AjouterEffet(e);*/
     }
-    
+    // Ceci est le premier exemple implementé pour illustrer l'effet animation
     public void exemple() {
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
