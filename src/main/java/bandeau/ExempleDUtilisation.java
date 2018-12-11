@@ -7,10 +7,7 @@ public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
     
     public static void main(String[] args) {
-	    /*Scénario sc = new Scénario();
-            Effet zoom = new Zoom();
-            sc.AjouterEffet(zoom.ZoomAnimation());
-            sc.AjouterEffet(e);*/
+	   new ExempleDUtilisation().exemple();
     }
     // Ceci est le premier exemple implementé pour illustrer l'effet animation
     public void exemple() {
