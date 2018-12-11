@@ -7,19 +7,17 @@ package bandeau;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.util.ArrayList;
 
 /**
  *
  * @author nicov
  */
-public class Rotation extends Effet{
-
-    public void RotationAnimation() {
-
-        unBandeau.setMessage("WILLY WOLLER 2006");
-		for (int i = 0; i <= 20; i++) {
-			unBandeau.setRotation(2*Math.PI*i / 10);
-			super.pauseEntreEffet();
-		}
+public class Scénario {
+     private ArrayList<Effet> scénarioPub = new ArrayList<Effet>();
+     
+    
+    public void AjouterEffet(Effet e){
+        scénarioPub.add(e);
     }
 }

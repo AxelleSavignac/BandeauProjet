@@ -12,21 +12,15 @@ import java.awt.Font;
  *
  * @author nicov
  */
-public class Zoom {
-
-    private final Bandeau unBandeau = new Bandeau();
+public class Zoom extends Effet{
 
     public void ZoomAnimation() {
-
-        Font font = unBandeau.getFont();
-        Color back = unBandeau.getBackground();
-        Color fore = unBandeau.getForeground();
-
+        
         for (int j = 0; j < 3; j++) {
             unBandeau.setMessage("WILLY WOLLER 2006");
             for (int i = 5; i < 35; i += 5) {
                 unBandeau.setFont(new Font("Dialog", Font.BOLD, 5 + i));
-                unBandeau.sleep(100);
+                super.pauseEntreEffet();
             }
         }
     }
