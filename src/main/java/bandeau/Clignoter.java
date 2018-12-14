@@ -8,29 +8,19 @@ package bandeau;
 import java.awt.Color;
 import java.awt.Font;
 
-public class Clignoter {
-    
-    private final Bandeau bandeauAxelle2 = new Bandeau();
-    
-    public static void main(String[] args) {
-	    new  Clignoter().essai2();
-    
-}
-    public void essai2() {
-        Font font = bandeauAxelle2.getFont();
-        Color back = bandeauAxelle2.getBackground();
-        Color fore = bandeauAxelle2.getForeground();
-        
-        for (int i = 0; i <20; i++) {
-            bandeauAxelle2.setMessage("Epluche patate revolutionnaire");
-            bandeauAxelle2.sleep(100);
-            bandeauAxelle2.setMessage(""); 
-            bandeauAxelle2.sleep(100);
+public class Clignoter extends Effet {
+
+    public Clignoter(Bandeau unBandeau) {
+        super(unBandeau);
+    }
+
+    @Override
+    public void playEffet() {
+        for (int i = 0; i < 20; i++) {
+            unBandeau.setMessage("Pour 1 acheté, c'est pas 1, pas 2, pas 3 ... Mais 14 WILLY WALLER 2006 offerts");
+            this.pauseEntreEffet(100);
+            unBandeau.setMessage("");
+            this.pauseEntreEffet(100);
         }
-            
-    }}
-        
-        
-        
-        
-        
+    }
+}

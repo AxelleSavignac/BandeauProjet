@@ -12,14 +12,18 @@ import java.awt.Font;
  *
  * @author nicov
  */
-public class Rotation extends Effet{
+public class Rotation extends Effet {
 
-    public void RotationAnimation() {
+    public Rotation(Bandeau unBandeau) {
+        super(unBandeau);
+    }
 
+    @Override
+    public void playEffet() {
         unBandeau.setMessage("WILLY WOLLER 2006");
-		for (int i = 0; i <= 20; i++) {
-			unBandeau.setRotation(2*Math.PI*i / 10);
-			super.pauseEntreEffet();
-		}
+        for (int i = 0; i <= 20; i++) {
+            unBandeau.setRotation(2 * Math.PI * i / 10);
+            this.pauseEntreEffet(100);
+        }
     }
 }

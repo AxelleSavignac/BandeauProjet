@@ -5,6 +5,7 @@
  */
 package bandeau;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -12,18 +13,19 @@ import java.awt.Font;
  *
  * @author nicov
  */
-public class Effet{
+public abstract class Effet {
     
-    
-    protected final Bandeau unBandeau = new Bandeau();
-    
-    //Définition de la fenêtre d'affichage
-    Font font = unBandeau.getFont();
-    Color back = unBandeau.getBackground();
-    Color fore = unBandeau.getForeground();
-    //Methode du sleep
-    public void pauseEntreEffet(){
-        unBandeau.sleep(100);
+    protected final Bandeau unBandeau ;
+
+    public Effet(Bandeau unBandeau){
+        this.unBandeau = unBandeau;
     }
-   
+
+    //Methode du sleep
+    public void pauseEntreEffet(int i) {
+        unBandeau.sleep(i);
+    }
+
+    public abstract void playEffet();
+
 }
