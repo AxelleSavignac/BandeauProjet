@@ -42,11 +42,11 @@ public class Scenario {
 
     }
     
-
+    //Méthode d'ajout d'effet
     public void AjouterEffet(Effet e) {
         scénarioPub.add(e);
     }
-
+    //Méthode qui joue les effets appartenant à la collection 
     public void jouer() {
         for (Effet e : scénarioPub) {
             e.playEffet();

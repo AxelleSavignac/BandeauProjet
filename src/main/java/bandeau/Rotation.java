@@ -20,7 +20,7 @@ public class Rotation extends Effet {
 
 
 
-   
+    //Définition de la méthode playEffet() pour Rotation
     public void playEffet() {
         unBandeau.setMessage("WILLY WOLLER 2006");
         for (int i = 0; i <= 20; i++) {

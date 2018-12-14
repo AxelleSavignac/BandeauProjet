@@ -14,11 +14,13 @@ public class Couleur extends Effet {
         super(unBandeau);
     }
 
-    @Override
+     //Définition de la méthode playEffet() pour Zoom
     public void playEffet() {
-        Color c;
+        //Création d'un élement random
         Random r = new Random();
+        //Définition de la couleur du fond en mode random
         unBandeau.setBackground(new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255)));
+        //Définition de la couleur de l'écriture en mode random
         unBandeau.setForeground(new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255)));
         this.pauseEntreEffet(50);
     }

@@ -16,9 +16,9 @@ public class Zoom extends Effet {
     public Zoom(Bandeau unBandeau) {
         super(unBandeau);
     }
-
+    //Définition de la méthode playEffet() pour Zoom
     public void playEffet() {
-
+        //Répétition d'effet Zoom
         for (int j = 0; j < 3; j++) {
             unBandeau.setMessage("WILLY WOLLER 2006");
             for (int i = 5; i < 35; i += 5) {

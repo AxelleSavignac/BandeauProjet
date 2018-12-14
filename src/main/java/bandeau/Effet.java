@@ -22,7 +22,7 @@ public abstract class Effet {
     public void pauseEntreEffet(int i) {
         unBandeau.sleep(i);
     }
-
+    //Appel de la méthode abstraite
     public abstract void playEffet();
 
 }

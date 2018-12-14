@@ -10,7 +10,7 @@ public class Clignoter extends Effet {
     public Clignoter(Bandeau unBandeau) {
         super(unBandeau);
     }
-
+     //Définition de la méthode playEffet() pour Clignoter
     public void playEffet() {
         unBandeau.setMessage("Offre spéciale !!");
         this.pauseEntreEffet(2000);
