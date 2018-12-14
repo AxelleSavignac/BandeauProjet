@@ -14,6 +14,8 @@ import java.awt.Font;
  */
 public class Rotation extends Effet{
 
+   
+
     public void RotationAnimation() {
 
         unBandeau.setMessage("WILLY WOLLER 2006");
@@ -22,4 +24,11 @@ public class Rotation extends Effet{
 			super.pauseEntreEffet();
 		}
     }
+
+    @Override
+    public void jouer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
 }

@@ -8,14 +8,15 @@ package bandeau;
 import java.awt.Color;
 import java.awt.Font;
 
-public class Clignoter {
+public class Clignoter extends Effet{
     
     private final Bandeau bandeauAxelle2 = new Bandeau();
     
-    public static void main(String[] args) {
-	    new  Clignoter().essai2();
     
-}
+
+ 
+
+ 
     public void essai2() {
         Font font = bandeauAxelle2.getFont();
         Color back = bandeauAxelle2.getBackground();
@@ -28,7 +29,15 @@ public class Clignoter {
             bandeauAxelle2.sleep(100);
         }
             
-    }}
+    }
+
+    @Override
+    public void jouer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+}
         
         
         

@@ -14,6 +14,8 @@ import java.awt.Font;
  */
 public class Zoom extends Effet{
 
+   
+
     public void ZoomAnimation() {
         
         for (int j = 0; j < 3; j++) {
@@ -24,5 +26,12 @@ public class Zoom extends Effet{
             }
         }
     }
+
+    @Override
+    public void jouer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+  
 
 }

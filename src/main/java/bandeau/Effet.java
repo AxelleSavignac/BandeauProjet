@@ -12,7 +12,7 @@ import java.awt.Font;
  *
  * @author nicov
  */
-public class Effet{
+public abstract class Effet{
     
     
     protected final Bandeau unBandeau = new Bandeau();
@@ -25,5 +25,9 @@ public class Effet{
     public void pauseEntreEffet(){
         unBandeau.sleep(100);
     }
+    
+    abstract public void jouer();
+        
+    }
    
-}
+

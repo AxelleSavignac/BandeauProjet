@@ -15,9 +15,26 @@ import java.util.ArrayList;
  */
 public class Scénario {
      private ArrayList<Effet> scénarioPub = new ArrayList<Effet>();
+ 
+     
      
     
     public void AjouterEffet(Effet e){
+       
         scénarioPub.add(e);
+        
     }
+    
+    public void playOn() {
+        for (Effet e : scénarioPub) {
+            e.jouer();
+        }
+        
+        
+    }
+    
+  
+        
+        
+    
 }

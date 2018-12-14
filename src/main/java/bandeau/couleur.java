@@ -9,12 +9,13 @@ package bandeau;
 import java.awt.Color;
 import java.awt.Font;
 
-public class couleur {
+public class couleur extends Effet {
     private final Bandeau bandeauAxelle1 = new Bandeau();
     
-    public static void main(String[] args) {
-	    new  couleur().essai();
-    }
+
+    
+    
+
     
     public void essai() {
         Font font = bandeauAxelle1.getFont();
@@ -54,6 +55,14 @@ public class couleur {
                 bandeauAxelle1.sleep(500);
     
    }
+
+    @Override
+    public void jouer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+    
 }
 
 

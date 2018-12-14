@@ -55,5 +55,18 @@ public class ExempleDUtilisation {
 		monBandeau.setBackground(back);
 		monBandeau.setMessage("Termine");
 		//System.exit(0);
-   }
+    }
+    
+    
+    public void maPub() {
+        Scénario s = new Scénario();
+        s.AjouterEffet(new Zoom ());
+        s.AjouterEffet(new Rotation ());
+        s.AjouterEffet(new Clignoter ());
+        s.AjouterEffet(new couleur ());
+        Bandeau b = new Bandeau();
+        b.sleep(500);
+        s.playOn(b);
+              
+    }
 }
