@@ -5,20 +5,22 @@
  */
 package bandeau;
 
-import java.awt.Color;
-import java.awt.Font;
-
 /**
  *
  * @author nicov
  */
 public class Rotation extends Effet {
 
+
     public Rotation(Bandeau unBandeau) {
         super(unBandeau);
     }
 
-    @Override
+   
+
+
+
+   
     public void playEffet() {
         unBandeau.setMessage("WILLY WOLLER 2006");
         for (int i = 0; i <= 20; i++) {
@@ -26,4 +28,5 @@ public class Rotation extends Effet {
             this.pauseEntreEffet(100);
         }
     }
+    
 }

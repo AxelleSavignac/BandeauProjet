@@ -4,16 +4,13 @@
  * and open the template in the editor.
  */
 package bandeau;
-
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
-import java.awt.Color;
-import java.awt.Font;
-
-/**
+/*
  *
  * @author nicov
  */
+
 public abstract class Effet {
+
     
     protected final Bandeau unBandeau ;
 
@@ -29,3 +26,8 @@ public abstract class Effet {
     public abstract void playEffet();
 
 }
+
+    
+   
+   
+

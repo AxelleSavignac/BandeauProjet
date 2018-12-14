@@ -5,22 +5,33 @@
  */
 package bandeau;
 
-import java.awt.Color;
-import java.awt.Font;
-
 public class Clignoter extends Effet {
 
     public Clignoter(Bandeau unBandeau) {
         super(unBandeau);
     }
 
-    @Override
     public void playEffet() {
+        unBandeau.setMessage("Offre spéciale !!");
+        this.pauseEntreEffet(2000);
+        unBandeau.setMessage("Pour 1 WILLY WALLER 2006 Acheté !");
+        this.pauseEntreEffet(2000);
+        unBandeau.setMessage("C'est pas 1...");
+        this.pauseEntreEffet(2000);
+        unBandeau.setMessage("Pas 2...");
+        this.pauseEntreEffet(2000);
+        unBandeau.setMessage("Pas 3...");
+        this.pauseEntreEffet(2000);
+        unBandeau.setMessage("Mais !!!");
+        this.pauseEntreEffet(2000);
         for (int i = 0; i < 20; i++) {
-            unBandeau.setMessage("Pour 1 acheté, c'est pas 1, pas 2, pas 3 ... Mais 14 WILLY WALLER 2006 offerts");
-            this.pauseEntreEffet(100);
+            unBandeau.setMessage("14 WILLY WALLER 2006 offerts");
+            this.pauseEntreEffet(150);
             unBandeau.setMessage("");
-            this.pauseEntreEffet(100);
+            this.pauseEntreEffet(150);
+
         }
+        unBandeau.setMessage("Pour seulement 99.99euros !!!");
+        
     }
 }

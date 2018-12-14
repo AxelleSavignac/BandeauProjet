@@ -6,9 +6,6 @@ import java.awt.Font;
 public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
     
-    public static void main(String[] args) {
-	   new ExempleDUtilisation().exemple();
-    }
     // Ceci est le premier exemple implementé pour illustrer l'effet animation
     public void exemple() {
         Font font = monBandeau.getFont();
@@ -55,5 +52,5 @@ public class ExempleDUtilisation {
 		monBandeau.setBackground(back);
 		monBandeau.setMessage("Termine");
 		//System.exit(0);
-   }
+    }
 }

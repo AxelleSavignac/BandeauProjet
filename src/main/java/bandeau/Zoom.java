@@ -5,7 +5,6 @@
  */
 package bandeau;
 
-import java.awt.Color;
 import java.awt.Font;
 
 /**
@@ -18,8 +17,8 @@ public class Zoom extends Effet {
         super(unBandeau);
     }
 
-    @Override
     public void playEffet() {
+
         for (int j = 0; j < 3; j++) {
             unBandeau.setMessage("WILLY WOLLER 2006");
             for (int i = 5; i < 35; i += 5) {
